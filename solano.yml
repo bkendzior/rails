@@ -20,18 +20,11 @@ tests:
    - |
      set -o pipefail
      set -ev
-     python -c 'import mpmath.libmp; print("mpmath.libmp.BACKEND:",  mpmath.libmp.BACKEND == "gmpy");  print("mpmath.libmp.BACKEND:", mpmath.libmp.BACKEND)'
-     python -c 'import mpmath.libmp; assert mpmath.libmp.BACKEND == "gmpy"'
-   - |
-     set -o pipefail
-     set -ev
-     if [ "$USE_WHEEL" == "1" ]; then
-       pip wheel . -v
-       pip install scipy*.whl -v
-       USE_WHEEL_BUILD="--no-build"
-     elif [ "$USE_SDIST" == "1" ]; then
-       python setup.py sdist
-       pushd dist;
+     python -c 'import mpmath.libmp; print("mpmath.libmp.BACKEND:",  mpmath.libmp.BACKEND == "gmpy");  print("mpmath.libmp.BA:OOOOOOO
+
+
+
+hi
        pip install scipy*
        popd
        USE_WHEEL_BUILD="--no-build"
